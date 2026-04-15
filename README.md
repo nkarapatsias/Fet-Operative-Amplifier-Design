@@ -1,12 +1,22 @@
-# Fet-Operational-Amplifier-Design
-This repository is based on the design of an operational amplifier using only Mosfet transistors. The amp was designed and tested
-on Virtuoso by Cadence and its part of a university project. The requirments for that design are shown below
+# FET Operational Amplifier Design
 
-~ A(0) >=30 dB
-~ BW >= 500 Khz
-~ PM >=45 deg
-~ Isup <= 50 uA
-~ Voffset < 20 mV
-~ SL >= 1 V/ms
+## Overview
+This repository contains the design and verification of a custom operational amplifier built entirely with MOSFET transistors. Originally developed as a university project, the amplifier was fully designed, simulated, and tested using **Cadence Virtuoso**.
 
-All of them were met!
+The primary objective of this project was to build an amplifier that strictly adheres to specific analog performance constraints, balancing gain, bandwidth, and power consumption. **All design requirements were successfully met.**
+
+## Tools Used
+This project was developed and verified using industry-standard analog IC design tools:
+* **Schematic Capture & Layout:** Cadence Virtuoso
+* **Simulation & Verification:** Analog Design Environment (ADE) / Spectre
+* *(Note: Ensure you have the appropriate Cadence licenses and the correct university PDK sourced in your environment before opening the project).*
+
+## Design Specifications
+The target specifications for the operational amplifier, which have all been achieved and verified via simulation, are outlined below:
+
+* **DC Gain (A0):** >= 30 dB
+* **Bandwidth (BW):** >= 500 kHz
+* **Phase Margin (PM):** >= 45°
+* **Supply Current (Isup):** <= 50 µA
+* **Offset Voltage (Voffset):** < 20 mV
+* **Slew Rate (SR):** >= 1 V/µs
